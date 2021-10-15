@@ -1,0 +1,19 @@
+{{>header}}
+{{>navbar}}
+<title>Home Page </title>
+<div class="col-md-10 flex-wrap my-3 d-flex mx-auto">
+{{#items}}
+  <a href="/product/{{name}}" class=" mx-3">
+    <div class="" style="width: 300px;">
+      <img src="{{image}}" class="card-img-top" alt="..."  style="height: 270px; max-height:270px;">
+      <div class="card-body">
+
+
+        <h5 class="card-title">{{name}}</h5>
+
+      </div>
+    </div>
+  </a>
+  {{/items}}
+</div>
+{{>footer}}

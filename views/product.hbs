@@ -1,0 +1,18 @@
+{{>header}}
+{{>navbar}}
+<title>Home Page </title>
+<div class="container my-3 ">
+{{#product}}
+<div class="" >
+      <img src="{{image}}" class="card-img-top" alt="..." style="max-height:400px !important;">
+      <div class="card-body">
+        <div class="container d-flex justify-content-between">
+            <div class="left">Name : {{name}}</div>
+            <div class="right">Price : {{price}}</div>
+        </div>
+
+      </div>
+    </div>
+  {{/product}}
+</div>
+{{>footer}}
