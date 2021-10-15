@@ -7,7 +7,7 @@ const fileupload = require('express-fileupload');
 const { urlencoded } = require('body-parser')
 const { ESRCH } = require('constants')
 const app = express();
-const port = process.env.PORT  || 80 ;
+const port = process.env.PORT || 8000 ;
 const partials = path.join(__dirname , '/views/partials')
 hbs.registerPartials(partials);
 app.use(express.json());
